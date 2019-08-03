@@ -1,26 +1,14 @@
-import { displayCategories } from "./app/categories";
-import { updateStatus } from "./app/status";
-import { displayActiveStatus } from './app/status';
-import { noteSection } from './app/selectors';
-import { categoryFilter } from './app/selectors';
-import { button } from './app/selectors';
-import { inputVal } from './app/selectors';
-import { status } from './app/selectors';
+import { displayCategories, activeCategory, deleteCategory, newCategoryByMenu, changeCategory, addNewCategory } from "./app/categories";
+import { updateStatus, displayActiveStatus } from "./app/status";
+import { noteSection, categoryFilter, button, inputVal, status } from './app/selectors';
+import { toggleDoneNotes, taskCompleted, undoCompleted } from './app/task';
 import { createNewObject } from './app/app';
-import { changeCategory } from './app/categories';
-import { addNewCategory } from './app/categories';
-import { newCategoryByMenu } from './app/categories';
 import { keyEvents } from './app/events';
 import { toggleInput } from './app/input';
 import { editNote } from './app/edit';
-import { toggleDoneNotes } from './app/task';
 import { removeItem } from './app/remove';
 import { changeColor } from './app/color';
-import { taskCompleted } from './app/task';
-import { undoCompleted } from './app/task';
 import { filterNotes } from './app/filter-notes';
-import { activeCategory } from './app/categories'
-import { deleteCategory } from './app/categories';
 import './scss/main.scss';
 
 (function IIFE() {
