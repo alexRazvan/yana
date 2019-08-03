@@ -1,0 +1,54 @@
+.note {
+	.color-picker {
+		position: relative;
+
+		.color-palette {
+			border: none;
+			background: none;
+
+		}
+
+		.colors {
+			z-index: 100;
+			transform: scale(0);
+			display: inline-block;
+			position: absolute;
+			left: 1.5rem;
+			background: lightgray;
+			display: grid;
+			padding: 1rem;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 1rem;
+			border-radius: 0 2rem 2rem 2rem;
+			transition: 170ms ease-out;
+			transform-origin: top left;
+			transition-delay: 50ms;
+			cursor: pointer;
+
+			i:nth-child(1) {
+				color: $note-red;
+			}
+
+			i:nth-child(2) {
+				color: $note-orange;
+			}
+
+			i:nth-child(3) {
+				color: $note-green;
+			}
+
+			i:nth-child(4) {
+				color: $note-blue;
+			}
+
+			i:nth-child(5) {
+				color: $note-darkblue;
+			}
+		}
+
+		.color-palette:hover~.colors,
+		.colors:hover {
+			transform: scale(1);
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.note {
+	.icons {
+		display: flex;
+		position: absolute;
+		justify-content: space-between;
+		width: 100%;
+		bottom: 0;
+		padding: 1rem;
+		background: linear-gradient(to bottom, transparent 30%, rgba($blue-sapphire, 0.4));
+		border-radius: 0 0 4px 4px;
+		color: white;
+		align-items: center;
+
+		.trash {
+			cursor: pointer;
+			transition: 90ms ease;
+		}
+
+		.noteID {
+			display: none;
+		}
+	}
+}

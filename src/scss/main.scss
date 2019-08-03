@@ -1,0 +1,21 @@
+@import 'general/normalize';
+@import 'general/reset';
+@import 'general/typography';
+@import 'general/colors';
+@import 'general/mq';
+
+@import 'layout/layout-input-section';
+@import 'layout/note-section';
+@import 'layout/identity';
+
+@import 'input/input-section';
+@import 'input/status';
+@import 'input/add-button';
+@import 'input/categories';
+
+@import 'note/note';
+@import 'note/checkmark';
+@import 'note/options';
+@import 'note/dropdown';
+@import 'note/note-colors';
+@import 'note/done-note';

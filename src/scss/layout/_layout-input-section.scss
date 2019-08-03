@@ -1,0 +1,33 @@
+*:focus {
+	outline: none;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	margin-top: 2rem;
+	box-shadow: 0 2px 100px -30px rgba(0, 0, 0, .5);
+	padding: 2rem;
+	position: relative;
+
+	@include tablet-up {
+		width: 70%;
+	}
+
+	@include hd-up {
+		width: 50%;
+	}
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3rem;
+	margin-left: auto;
+
+	@include phone-tablet-gap {
+		flex-direction: row;
+	}
+}

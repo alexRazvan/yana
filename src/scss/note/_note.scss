@@ -1,0 +1,42 @@
+.note {
+	width: 23rem;
+	min-height: 12rem;
+	margin-bottom: 2rem;
+	border-radius: 4px;
+	position: relative;
+
+	animation-duration: 250ms;
+	animation-name: addNote;
+	animation-timing-function: ease-in-out;
+	transform-origin: top left;
+
+	backface-visibility: hidden;
+
+	.note-body {
+		font-size: 1.4rem;
+		padding: 3rem;
+		padding-bottom: 5rem;
+		color: white;
+	}
+}
+
+@keyframes addNote {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+@keyframes deleteNote {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}

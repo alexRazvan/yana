@@ -1,0 +1,30 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css'); //font-awesome
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700'); //roboto
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+html {
+	font-size: 62.5%; // set 1rem to 10px
+	font-family: sans-serif; // Set default font family to sans-serif.
+	-ms-text-size-adjust: 100%; // Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom.
+	-webkit-text-size-adjust: 100%; // Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom.
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+li {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+}

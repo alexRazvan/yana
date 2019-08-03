@@ -1,0 +1,62 @@
+.done-note {
+	background: $gray;
+
+	.icons {
+		background: linear-gradient(to bottom, transparent 30%, rgba(white, 0.4));
+	}
+
+	.note-body {
+		text-decoration: line-through;
+		color: darkslategrey;
+	}
+
+	.dropdown {
+		.dropdown-btn {
+			cursor: not-allowed;
+			color: darkslategrey;
+			border: 1px solid darkslategrey;
+		}
+
+		&:hover .dropdown-content {
+			display: none;
+		}
+	}
+
+	.color-picker {
+		color: darkslategrey;
+
+		.color-palette {
+			cursor: not-allowed;
+		}
+	}
+
+	.color-picker:hover .colors {
+		display: none;
+	}
+
+	.trash {
+		color: darkslategrey;
+
+		&:hover {
+			color: $jelly-bean;
+		}
+	}
+
+	.done {
+		i {
+			margin-top: 3px;
+		}
+
+		&:hover {
+			transform: scale(1.3);
+
+			i {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+.inactive-input {
+	cursor: not-allowed !important;
+}

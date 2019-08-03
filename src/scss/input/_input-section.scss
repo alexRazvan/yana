@@ -1,0 +1,49 @@
+.add-section {
+	text-align: center;
+	position: relative;
+	margin-top: 5rem;
+	margin-bottom: 3rem;
+
+	#inputText {
+		position: relative;
+		font-size: 1.2rem;
+		text-indent: 2rem;
+		padding-right: 2rem;
+		border: none;
+		font-style: italic;
+		width: 100%;
+	}
+}
+
+.inputArea {
+	transition: 350ms cubic-bezier(0.23, 1, 0.320, 1);
+	border: 2px solid $jelly-bean;
+	padding: 2rem 4rem;
+	width: 90%;
+	border-radius: 2rem;
+
+	::placeholder {
+		color: $jelly-bean;
+	}
+
+	&.input-active {
+		border-radius: 6px;
+		border: 2px solid $iguana-green;
+
+		::placeholder {
+			color: $iguana-green;
+		}
+	}
+
+	@include phone-tablet-gap {
+		width: 50%;
+
+		&.input-active {
+			width: 70%;
+		}
+	}
+
+	.inactive-input {
+		cursor: not-allowed;
+	}
+}
