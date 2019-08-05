@@ -36,7 +36,8 @@
 			width: 2rem;
 			display: inline-block;
 			color: $liberty;
-			transition: transform 220ms ease-out, color 90ms ease;
+			// transition: transform 220ms ease-out, color 90ms ease;
+			transition: 200ms ease-out;
 			cursor: pointer;
 			font-size: 1.4rem;
 
@@ -47,7 +48,7 @@
 
 		&:hover .delete-category {
 			opacity: 1;
-			transform: translateX(30%) translateY(-50%) rotate(0deg);
+			transform: translateY(-50%) translateX(30%) rotate(0deg);
 		}
 	}
 
